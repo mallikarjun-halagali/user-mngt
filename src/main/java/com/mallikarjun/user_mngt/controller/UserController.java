@@ -15,6 +15,7 @@ public class UserController {
     @GetMapping("/get/{id}")
     Mono<?> getUserById(@PathVariable Long id) {
         return userService.getUserById(id);
+
     }
 
     @PostMapping("/create")
